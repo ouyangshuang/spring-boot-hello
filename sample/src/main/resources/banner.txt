@@ -1,0 +1,6 @@
+application.version : ${application.version}  MANIFEST.MF中声明的应用版本号
+application.formattedversion : ${application.formattedversion} MANIFEST.MF中声明的被格式化后的应用版本号（被括号包裹且以v作为前缀），用于显
+spring-boot.version : ${spring-boot.version}
+springboot.formatted-version : ${springboot.formatted-version} 正在使用的Spring Boot被格式化后的版本号（被括号包裹且以v作为前缀）, 用于显示，例
+
+自定义了一个运行画面！！！
