@@ -1,0 +1,7 @@
+name: ouyang
+
+---
+
+spring:
+  profiles: goodbye,dev
+name: Everyone
