@@ -15,7 +15,11 @@
         }
 
         function connect() {
-            var socket = new SockJS('/hello');
+            var user = document.getElementById('user');
+            if(user == '' || user == null){
+                return;
+            }
+            var socket = new SockJS('/hello/'+user);
             stompClient = Stomp.over(socket);
             stompClient.connect({}, function(frame) {
                 setConnected(true);
@@ -53,6 +57,7 @@
     Javascript and reload this page!</h2></noscript>
 <div>
     <div>
+        <input type="text" id="user" />
         <button id="connect" onclick="connect();">Connect</button>
         <button id="disconnect" disabled="disabled" onclick="disconnect();">Disconnect</button>
     </div>
